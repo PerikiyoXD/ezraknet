@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 2.6)
 
-project(RakNet)
-file(GLOB_RECURSE RAKNET_SOURCES "src/*.cpp")
+project(ezraknet)
+
+file(GLOB_RECURSE RAKNET_SOURCES "src/*.cpp")
 
 if(MSVC)
 	add_definitions(-D_CRT_SECURE_NO_WARNINGS)
