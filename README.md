@@ -1,27 +1,38 @@
 # ezraknet
-RakNet made simple with simple CMake support.
+Stripped-down RakNet library specifically built for CMake.
 
 ## Why?
-Because RakNet has tons of files in it's repo, and it's pretty boring having to search and build the specific stuff you need. 
+Because RakNet contains unneeded files in it's official repository, and it's pretty annoying searching and building the specific stuff you need and not finish building examples or other subprojects. 
 
 Here instead we have an straightforward generation. No samples, no shit. Just what you need.
+And it works with CMake.
 
 ## How?
-### Linux && MSYS2
+### Linux 
 ```
 git clone https://github.com/PerikiyoXD/ezraknet
 cd ezraknet
 mkdir build
 cd build
-cmake ..
+cmake .. -G"Unix Makefiles"
 make
 ```
-### Windows
+
+### MSYS2
+```sh
+git clone https://github.com/PerikiyoXD/ezraknet
+cd ezraknet
+mkdir build
+cd build
+cmake .. -G"MSYS Makefiles"
+make
+```
+### Visual Studio 2017
 ```
 git clone https://github.com/PerikiyoXD/ezraknet
 cd ezraknet
 mkdir build
 cd build
-cmake ..
+cmake .. -G"Visual Studio 15 2017"
 ```
-Open Visual Studio Solution (.sln) located inside ``build`` folder. (ie: C:/location/to/your/ezraknet/build/ezraknet.sln)
+And open Visual Studio Solution (.sln) located inside ``build`` folder. (ie: C:/base/folder/ezraknet/build/ezraknet.sln)
