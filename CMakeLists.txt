@@ -15,3 +15,7 @@ add_library(raknet
 target_include_directories(raknet
 	PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include"
 )
+
+install(TARGETS raknet RUNTIME DESTINATION "${CMAKE_SOURCE_DIR}/bin"
+			LIBRARY DESTINATION "${CMAKE_SOURCE_DIR}/lib"
+			ARCHIVE DESTINATION "${CMAKE_SOURCE_DIR}/lib")
