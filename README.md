@@ -1,5 +1,6 @@
 # ezraknet
 Stripped-down RakNet library specifically built for CMake.
+(Original project: https://github.com/OculusVR/RakNet)
 
 ## Why?
 Because RakNet contains unneeded files in it's official repository, and it's pretty annoying searching and building the specific stuff you need and not finish building examples or other subprojects. 
