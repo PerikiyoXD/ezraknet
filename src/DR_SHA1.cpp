@@ -8,7 +8,10 @@
 
 // If compiling with MFC, you might want to add #include "../include/StdAfx.h"
 
+#ifndef _CRT_SECURE_NO_WARNINGS
 #define _CRT_SECURE_NO_WARNINGS
+#endif // !_CRT_SECURE_NO_WARNINGS
+
 #include "../include/DR_SHA1.h"
 #include <stdlib.h>
 

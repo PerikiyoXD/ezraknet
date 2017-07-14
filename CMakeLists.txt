@@ -12,6 +12,8 @@ add_library(raknet
 	"${RAKNET_SOURCES}"
 )
 
+target_link_libraries(raknet ws2_32)
+
 target_include_directories(raknet
 	PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include"
 )
