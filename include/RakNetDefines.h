@@ -15,6 +15,16 @@
 // The user should not edit this file
 #include "RakNetDefinesOverrides.h"
 
+#ifdef WIN32
+	// Avoid annoying WinSock2 deprecated warnings
+	#ifndef _WINSOCK_DEPRECATED_NO_WARNINGS
+	#define _WINSOCK_DEPRECATED_NO_WARNINGS
+	#endif // !_WINSOCK_DEPRECATED_NO_WARNINGS
+#endif // WIN32
+
+
+
+
 /// Define __GET_TIME_64BIT to have RakNet::TimeMS use a 64, rather than 32 bit value.  A 32 bit value will overflow after about 5 weeks.
 /// However, this doubles the bandwidth use for sending times, so don't do it unless you have a reason to.
 /// Comment out if you are using the iPod Touch TG. See http://www.jenkinssoftware.com/forum/index.php?topic=2717.0
